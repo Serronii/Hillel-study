@@ -14,9 +14,11 @@ public class Main {
         int i = 600;
         long l = 342424325L;
         //Floating-point
-        float f = 10.14f;
-        double dd = 11.30d;
-
-        System.out.println(b);
+        float f = 10.1234567f;
+        double dd = 11.12345678901234567d;
+        //Boolean
+        boolean boolt = true;
+        boolean boolf = false; 
+        System.out.println(dd);
         }
     }
