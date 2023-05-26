@@ -5,7 +5,7 @@ public class Cast {
         //Character
         char a = 'a';
         //String
-        String b = "china";
+        String b = "chinazes";
         //Integers
         byte c = 126;
         short d = 250;
