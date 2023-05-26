@@ -2,7 +2,7 @@ package org.example;
 
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
-public class Main {
+public class Variables {
     public static void main(String[] args) {
         //Character
         char a = 'a';
@@ -18,7 +18,7 @@ public class Main {
         double dd = 11.12345678901234567d;
         //Boolean
         boolean boolt = true;
-        boolean boolf = false; 
+        boolean boolf = false;
         System.out.println(dd);
         }
     }
