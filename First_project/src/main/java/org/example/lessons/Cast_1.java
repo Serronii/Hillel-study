@@ -1,6 +1,6 @@
-package org.example;
+package org.example.lessons;
 
-public class Cast {
+public class Cast_1 {
     public static void main(String[] args) {
         //Character
         char a = 'a';
@@ -27,7 +27,7 @@ public class Cast {
         double castFloatToDouble = f;
         float castFoubleToFloat = (float) dd;
 
-        System.out.println(castFloatToInt);
+        System.out.println(castLongToInt);
 
     }
 }
