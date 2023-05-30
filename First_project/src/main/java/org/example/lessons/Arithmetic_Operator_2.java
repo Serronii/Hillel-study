@@ -24,7 +24,7 @@ public class Arithmetic_Operator_2 {
         int d = 2;
 
         int result = c % d;
-//----------------------------------------------
+//-----------------------------------------------
         int g = 10;
 
         System.out.println(++g);
