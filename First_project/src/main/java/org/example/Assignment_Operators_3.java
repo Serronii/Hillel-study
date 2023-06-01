@@ -1,4 +1,4 @@
-package org.example.lessons;
+package org.example;
 
 public class Assignment_Operators_3 {
 

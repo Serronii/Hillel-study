@@ -12,23 +12,5 @@ public class TASK_2 {
         a /= 28;
 
         System.out.println(a);
-
-
-
-
-
-
-
-
-
-
     }
-
-
-
-
-
-
-
-
 }
