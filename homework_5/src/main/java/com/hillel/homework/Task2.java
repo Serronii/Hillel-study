@@ -1,6 +1,6 @@
-package org.example;
+package com.hillel.homework;
 
-public class TASK_2 {
+public class Task2 {
     public static void main(String[] args) {
 
 

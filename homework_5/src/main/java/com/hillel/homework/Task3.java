@@ -1,13 +1,12 @@
-package org.example;
+package com.hillel.homework;
 
 import java.util.Scanner;
 
-public class TASK_3 {
+public class Task3 {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
-
         int factorial = 1;
         for (int i = 1; i <= n; i++) {
             factorial *= i;
