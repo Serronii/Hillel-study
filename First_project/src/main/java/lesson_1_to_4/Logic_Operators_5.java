@@ -1,4 +1,4 @@
-package org.example.lessons;
+package lesson_1_to_4;
 
 public class Logic_Operators_5 {
     public static void main(String[] args) {

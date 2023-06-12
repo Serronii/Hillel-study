@@ -1,4 +1,4 @@
-package org.example.lessons;
+package lesson_1_to_4;
 
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
