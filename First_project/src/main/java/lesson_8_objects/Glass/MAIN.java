@@ -1,17 +1,15 @@
-package lesson_8;
-
-import java.util.Scanner;
+package lesson_8_objects.Glass;
 
 public class MAIN {
 
     public static void main(String[] args) {
 
-//  CОЗДАНИЕ ОБЬЕКТА
+                 //  CОЗДАНИЕ ОБЬЕКТА
        int x =10;
 //   (название класа Glass - название- NEW название конструктора ( в скобках значение параметров конструктора)
-           Glass glass4 = new Glass(250,"black","plastic");
-//                glass4 - это ссылка на параметры (волюм,колор,материал) которые находяться в кучи (heap)
-//                   System.out.println(glass4); //вывод ссылки
+                      Glass glass4 = new Glass(250,"black","plastic");
+//                          glass4 - это ссылка на параметры (волюм,колор,материал) которые находяться в кучи (heap)
+//                          System.out.println(glass4); //вывод ссылки
 
 //      Копирование по значению (инт), оно будет передавать значение в мейне, даже если в методе есть другое значение
         printX(x);

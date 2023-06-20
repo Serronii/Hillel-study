@@ -1,4 +1,4 @@
-package lesson_8;
+package lesson_8_objects.Glass;
 
 public class Glass {
     // ПОЛЯ СОСТОЯНИЯ ОБЬЕКТА. ТУТ МЫ НЕ УКАЗЫВАЕМ ПЕРЕМЕННЫЕ
