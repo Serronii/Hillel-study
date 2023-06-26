@@ -1,4 +1,4 @@
-package lesson_10_String_Buffer_String_Builder;
+package lesson_10;
 
 public class part1 {
     //String Buffer - Обьект который изменяет свое состояние

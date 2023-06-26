@@ -1,4 +1,4 @@
-package lesson_10_Builder_regex_OOP;
+package lesson_10;
 
 public class OOP {
     //Наследование -  это механизм, который позволяет создавать новые классы
