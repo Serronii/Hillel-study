@@ -1,4 +1,6 @@
-package com.hillel.homework;
+package com.hillel.homework.Transport;
+
+import com.hillel.homework.Transport.Transport;
 
 public class Car extends Transport {
 

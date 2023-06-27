@@ -1,4 +1,4 @@
-package com.hillel.homework;
+package com.hillel.homework.Transport;
 
 public abstract class Transport {
 
