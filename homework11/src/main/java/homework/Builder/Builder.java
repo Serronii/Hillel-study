@@ -1,4 +1,4 @@
-package homework;
+package homework.Builder;
 
 public class Builder {
     public static void main(String[] args) {

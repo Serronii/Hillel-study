@@ -1,8 +1,10 @@
-package homework.Transport;
+package homework.Transport.Moto;
+
+import homework.Transport.Transport;
 
 public class Moto extends Transport {
 
-   int mileage;
+    public int mileage;
     String bodyMoto;
     String makeMoto;
 

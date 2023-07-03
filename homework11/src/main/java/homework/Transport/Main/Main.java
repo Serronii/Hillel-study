@@ -1,4 +1,8 @@
-package homework.Transport;
+package homework.Transport.Main;
+
+import homework.Transport.Car.Car;
+import homework.Transport.Car.DesignCar;
+import homework.Transport.Moto.Moto;
 
 public class Main {
 
