@@ -1,9 +1,10 @@
-package homework.Transport;
+package Transport.Abstraction;
 
 public abstract class Transport {
 
-   public String type;
-   public int yearOfProduction;
+   private String type;
+   private int yearOfProduction;
+
 
    public Transport(String type,int yearOfProduction){
        this.type = type;

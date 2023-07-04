@@ -1,6 +1,6 @@
-package homework.Transport.Car;
+package Transport.Car;
 
-import homework.Transport.Transport;
+import Transport.Abstraction.Transport;
 
 public class Car extends Transport {
 
@@ -13,7 +13,8 @@ public class Car extends Transport {
         this.enginePower = enginePower;
         this.brand = brand;
         this.model = model;
-
     }
-
+    public void printCar(){
+        System.out.println("Brand of Car " + brand);
+    }
 }
