@@ -13,8 +13,9 @@ public final class DesignCar extends Car {
           this.bodyType =bodyType;
           this.color = color;
     }
-    public void setBodyType(String bodyType) { this.bodyType = bodyType; }
-
+    public void setBodyType(String bodyType) {
+        this.bodyType = bodyType;
+    }
     public String getBodyType(){
         System.out.println(this.bodyType);
         return bodyType;
