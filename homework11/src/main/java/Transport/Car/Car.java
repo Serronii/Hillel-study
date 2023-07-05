@@ -8,7 +8,7 @@ public class Car extends Transport {
     private String brand;
     private String model;
 
-    public Car(String type, int yearOfProduction, int enginePower, String brand, String model) {
+    public Car(String type, int yearOfProduction, int enginePower, String brand, String model,int price) {
         super(type, yearOfProduction);
         this.enginePower = enginePower;
         this.brand = brand;
@@ -32,5 +32,10 @@ public class Car extends Transport {
     public String getModel() {
         System.out.println(this.model);
         return model;
+    }
+    @Override
+    public int calculatePrice(){
+     return this.getPrice();
+
     }
 }
