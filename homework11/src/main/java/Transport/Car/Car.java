@@ -34,8 +34,16 @@ public class Car extends Transport {
         return model;
     }
     @Override
-    public int calculatePrice(){
-     return this.getPrice();
-
+    public int calculatePrice() {
+        return this.getPrice();
+    }
+    @Override
+    public String toString() {
+        return "Type: " + getType() + "," +
+                " Year of Production: " + getYearOfProduction() + "," +
+                " Engine Power: " + enginePower + "," +
+                " Brand: " + brand + "," +
+                " Model: " + model + "," +
+                " Price: " + getPrice();
     }
 }

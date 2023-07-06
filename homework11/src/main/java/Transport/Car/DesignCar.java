@@ -24,4 +24,8 @@ public final class DesignCar extends Car {
         System.out.println(this.color);
         return color;
     }
+    @Override
+    public String toString(){
+        return bodyType + " " + color;
+    }
 }

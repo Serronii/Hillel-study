@@ -11,11 +11,15 @@ public abstract class Transport extends Object {
         this.yearOfProduction = yearOfProduction;
         this.price = price;
     }
-
+    public int getYearOfProduction() {
+        return yearOfProduction;
+    }
     public int getPrice() {
         return price;
     }
-
+    public String getType() {
+        return type;
+    }
     public void setPrice(int price) {
         this.price = price;
     }

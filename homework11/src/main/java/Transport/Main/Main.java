@@ -19,6 +19,9 @@ public class Main {
         secondCar.getModel();
         System.out.println("           ");
 
+        System.out.println(secondCar);
+        System.out.println("           ");
+
         // CLAS DESIGN CAR
         DesignCar firstCar = new DesignCar("Passanger",2019,249,"BMW","x3","SUV","Black",3000);
         firstCar.setBodyType("Coupe");
@@ -26,6 +29,9 @@ public class Main {
         System.out.println("           ");
 
         firstCar.getColor();
+        System.out.println("              ");
+
+        System.out.println(firstCar);
         System.out.println("              ");
 
         // CLASS MOTO
