@@ -1,6 +1,6 @@
 package Transport.Abstraction;
 
-public abstract class Transport {
+public abstract class Transport extends Object {
 
     private String type;
     private int yearOfProduction;

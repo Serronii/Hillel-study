@@ -45,6 +45,9 @@ public class Moto extends Transport {
         public void setMileage(int mileage) {
             this.mileage = mileage;
         }
+        public int getMilleage(){
+        return mileage;
+        }
     @Override
     public int calculatePrice() {
 
@@ -53,5 +56,9 @@ public class Moto extends Transport {
       setPrice(price);
       return price;
 
+    }
+    @Override
+    public String toString(){
+        return bodyMoto + " " + brandMoto;
     }
 }
