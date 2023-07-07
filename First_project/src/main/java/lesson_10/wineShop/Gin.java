@@ -15,10 +15,6 @@ public class Gin extends AlcoholBottle {
         this.year = year;
         this.type = type;
         this.ingredients = ingredients;
-  }
-
-  public Gin(){
-        super(12);
 
   }
 

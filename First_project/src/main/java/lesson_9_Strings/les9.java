@@ -8,4 +8,10 @@ public class les9 {
         String print = String.format("%s     %d times %c",k,x,'!'); //2 вариант
         System.out.println(print);
     }
+
+   //%s - для строковых значений (string)
+    //%f - для значений с плавающей точкой (float или double)
+    //%c - для символов (char)
+    //%b - для логических значений (boolean)
+    //%d - спецификатор формата для целого числа (int)
 }

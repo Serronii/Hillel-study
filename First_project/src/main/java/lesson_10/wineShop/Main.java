@@ -7,15 +7,15 @@ public class Main {
         Gin bulldog = new Gin();
 
         //создаем обьект используя параметры с конструктора джин
-//        String[] ingredients = {"Juniper"};
-//        Gin bulldog1 = new Gin(37,"Buldog",2003,"dry",ingredients);
-//        System.out.println(bulldog1.alcoholProcent);
-//        System.out.println(bulldog1.name);
-//        System.out.println(bulldog1.year);
-//        System.out.println(bulldog1.type);
-//        System.out.println(Arrays.asList(ingredients));
-//
-//        Wine koblevo = new Wine(14,"Saperavi","white",2013);
+        String[] ingredients = {"Juniper"};
+        Gin bulldog1 = new Gin(37,"Buldog",2003,"dry",ingredients);
+        System.out.println(bulldog1.alcoholProcent);
+        System.out.println(bulldog1.name);
+        System.out.println(bulldog1.year);
+        System.out.println(bulldog1.type);
+        System.out.println(Arrays.asList(ingredients));
+
+        Wine koblevo = new Wine(14,"Saperavi","white",2013);
 
         SparklingWine proseco = new SparklingWine(14,"Reisling","White", 2003,"Italia","dry");
         System.out.println(proseco.region);
