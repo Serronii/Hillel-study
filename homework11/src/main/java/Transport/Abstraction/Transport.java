@@ -23,6 +23,8 @@ public abstract class Transport {
     public void setPrice(int price) {
         this.price = price;
     }
+
+    public abstract void isFilled();
    public abstract int calculatePrice();
 
 

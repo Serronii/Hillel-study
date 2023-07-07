@@ -19,12 +19,13 @@ public class Main {
         secondCar.getModel();
         System.out.println("           ");
 
-        System.out.println(secondCar);
+        System.out.println(secondCar); //это toString метод
         System.out.println("           ");
 
         secondCar.setEnginePower(240);
         System.out.println("If Engine Power is " + secondCar.getEnginePower() + " = Price Car will be from " + secondCar.calculatePrice() + "$");
         System.out.println("           ");
+
         System.out.println("------------------------------------------------------------------------------------------------");
 
         // CLAS DESIGN CAR
@@ -36,7 +37,7 @@ public class Main {
         firstCar.getColor();
         System.out.println("              ");
 
-        System.out.println(firstCar);
+        System.out.println(firstCar);// toString метод
         System.out.println("              ");
         System.out.println("------------------------------------------------------------------------------------------------");
 
@@ -54,11 +55,13 @@ public class Main {
         firstMoto.getMileage();
         System.out.println("           ");
 
+        System.out.println(firstMoto); // toString метод
+        System.out.println("           ");
+
         firstMoto.setMileage(4450);
         System.out.println("Mileage " + firstMoto.getMilleage() + " = Price moto " + firstMoto.calculatePrice() + "$");
         System.out.println("           ");
 
-        System.out.println(firstMoto);
 
 
     }

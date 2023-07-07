@@ -9,7 +9,7 @@ public class Moto extends Transport {
     private String brandMoto;
     private int basicPrice;
 
-    public Moto(String type, int yearOfProduction, int mileage, String bodyMoto, String makeMoto, int basicPrice) {
+    public Moto(String type, int yearOfProduction, int mileage, String bodyMoto, String brandMoto, int basicPrice) {
         super(type, yearOfProduction);
         this.mileage = mileage;
         this.bodyMoto = bodyMoto;
@@ -48,6 +48,7 @@ public class Moto extends Transport {
         public int getMilleage(){
         return mileage;
         }
+
     @Override
     public int calculatePrice() {
 
@@ -61,4 +62,10 @@ public class Moto extends Transport {
     public String toString(){
         return bodyMoto + " " + brandMoto;
     }
+
+    @Override
+    public void isFilled() {
+        System.out.println(getType() +" Is filling " + brandMoto);
+    }
+
 }

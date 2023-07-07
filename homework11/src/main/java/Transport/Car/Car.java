@@ -19,6 +19,10 @@ public class Car extends Transport {
         this.enginePower = enginePower;
     }
 
+    public void setModel(String model) {
+        this.model = model;
+    }
+
     public int getEnginePower() {
         System.out.println("EnginePower - " + this.enginePower);
         return enginePower;
@@ -33,7 +37,6 @@ public class Car extends Transport {
         System.out.println(this.model);
         return model;
     }
-
     @Override
     public int calculatePrice() {
         if (enginePower >= 200) {
@@ -57,4 +60,9 @@ public class Car extends Transport {
                 " Model: " + model + "," +
                 " Price: " + getPrice();
     }
+    @Override
+    public void isFilled() {
+        System.out.println(getType() +" Is filling " + model);
+    }
+
 }
