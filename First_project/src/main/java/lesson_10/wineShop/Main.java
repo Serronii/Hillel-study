@@ -4,7 +4,6 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        Gin bulldog = new Gin();
 
         //создаем обьект используя параметры с конструктора джин
         String[] ingredients = {"Juniper"};
@@ -20,7 +19,7 @@ public class Main {
         SparklingWine proseco = new SparklingWine(14,"Reisling","White", 2003,"Italia","dry");
         System.out.println(proseco.region);
 
-        Gin Gin = new Gin();
+//        Gin Gin = new Gin();
        //Если вызываем обьект без параметров, оно будет цеплять конструктор без параметров
 
     }
