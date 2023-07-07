@@ -8,8 +8,8 @@ public final class DesignCar extends Car {
     private String color;
 
 
-    public DesignCar(String type, int yearOfProduction, int enginePower, String brand, String model, String bodyType, String color,int price) {
-        super(type, yearOfProduction, enginePower, brand, model,price);
+    public DesignCar(String type, int yearOfProduction, String brand, int enginePower, String model, String bodyType, String color,int price) {
+        super(type, yearOfProduction, brand, enginePower, model,price);
           this.bodyType =bodyType;
           this.color = color;
     }

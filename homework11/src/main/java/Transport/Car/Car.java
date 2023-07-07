@@ -8,7 +8,7 @@ public class Car extends Transport {
     private String brand;
     private String model;
 
-    public Car(String type, int yearOfProduction, int enginePower, String brand, String model,int price) {
+    public Car(String type, int yearOfProduction, String brand, int enginePower, String model, int price) {
         super(type, yearOfProduction);
         this.enginePower = enginePower;
         this.brand = brand;
@@ -20,7 +20,7 @@ public class Car extends Transport {
     }
 
     public int getEnginePower() {
-        System.out.println("EnginePower - "+ this.enginePower);
+        System.out.println("EnginePower - " + this.enginePower);
         return enginePower;
     }
 
@@ -33,9 +33,20 @@ public class Car extends Transport {
         System.out.println(this.model);
         return model;
     }
+
     @Override
     public int calculatePrice() {
-        return this.getPrice();
+        if (enginePower >= 200) {
+            int price = 10000;
+            setPrice(price);
+            return price;
+
+        } else if (enginePower < 200) {
+            int price = 7000;
+            setPrice(price);
+            return price;
+        }
+        return 0;
     }
     @Override
     public String toString() {
