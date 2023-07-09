@@ -1,12 +1,15 @@
 package abstractions;
 
+
 public abstract class SmartphonesCondition implements Smartphones {
 
-    boolean simCard;
+    private boolean simCard;
 
-    int cardBalance;
+    private double cardBalance;
 
-    public SmartphonesCondition(boolean simCard, int cardBalance) {
+    private boolean wifiConection;
+
+    public SmartphonesCondition(boolean simCard, double cardBalance) {
         this.simCard = simCard;
         this.cardBalance = cardBalance;
     }
@@ -15,7 +18,7 @@ public abstract class SmartphonesCondition implements Smartphones {
         return simCard;
     }
 
-    public int getCardBalance() {
+    public double getCardBalance() {
         return cardBalance;
     }
 
@@ -26,4 +29,14 @@ public abstract class SmartphonesCondition implements Smartphones {
     public void setCardBalance(int cardBalance) {
         this.cardBalance = cardBalance;
     }
+
+    public boolean getWifiConection() {
+        return wifiConection;
+    }
+
+    public void setWifiConection(boolean wifiConection) {
+        this.wifiConection = wifiConection;
+    }
 }
+
+

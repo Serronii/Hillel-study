@@ -2,7 +2,7 @@ package abstractions;
 
 public interface Smartphones {
      String call();
-     int sms();
-     int internet();
+     String sms();
+     String internet();
 
 }
