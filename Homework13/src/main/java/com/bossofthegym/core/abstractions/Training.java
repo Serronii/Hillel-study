@@ -1,6 +1,6 @@
 package com.bossofthegym.core.abstractions;
 
-import com.bossofthegym.core.abstractions.core.Instructor;
+import com.bossofthegym.core.trainings.Instructor;
 
 public abstract class Training implements CalculationCalories {
 

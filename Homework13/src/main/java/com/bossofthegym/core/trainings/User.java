@@ -1,4 +1,6 @@
-package com.bossofthegym.core.abstractions;
+package com.bossofthegym.core.trainings;
+
+import com.bossofthegym.core.abstractions.Training;
 
 import java.util.Arrays;
 
@@ -8,7 +10,6 @@ public class User {
     Training[] trainings;
     private int sumCalories;
     private int weight;
-
     private int index;
 
     public User(int id, int weight) {
@@ -40,4 +41,5 @@ public class User {
                 ", index=" + index +
                 '}';
     }
+
 }

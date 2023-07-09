@@ -1,7 +1,7 @@
 package com.bossofthegym.core.demo;
 
-import com.bossofthegym.core.abstractions.User;
-import com.bossofthegym.core.abstractions.core.Instructor;
+import com.bossofthegym.core.trainings.User;
+import com.bossofthegym.core.trainings.Instructor;
 import com.bossofthegym.core.implementations.Run;
 
 public class FitnessClub {

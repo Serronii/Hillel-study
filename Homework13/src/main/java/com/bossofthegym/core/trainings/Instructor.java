@@ -1,4 +1,4 @@
-package com.bossofthegym.core.abstractions.core;
+package com.bossofthegym.core.trainings;
 
 public class Instructor {
 

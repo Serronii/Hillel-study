@@ -1,7 +1,7 @@
 package com.bossofthegym.core.implementations;
 
 import com.bossofthegym.core.abstractions.Training;
-import com.bossofthegym.core.abstractions.core.Instructor;
+import com.bossofthegym.core.trainings.Instructor;
 
 public class Run extends Training {
 
@@ -23,7 +23,7 @@ public class Run extends Training {
 
     @Override
     public String toString() {
-       return "Run{" +
+       return  "Run{" +
                 "durationMin=" + getDurationMin() +
                 ", instructor=" + getInstructor().toString() +
                 "speed=" + speed +
