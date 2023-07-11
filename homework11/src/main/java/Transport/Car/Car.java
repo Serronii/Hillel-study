@@ -13,6 +13,7 @@ public class Car extends Transport {
         this.enginePower = enginePower;
         this.brand = brand;
         this.model = model;
+
     }
 
     public void setEnginePower(int enginePower) {

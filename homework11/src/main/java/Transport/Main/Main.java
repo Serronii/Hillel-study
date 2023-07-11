@@ -4,6 +4,7 @@ import Transport.Abstraction.Transport;
 import Transport.Car.Car;
 import Transport.Car.DesignCar;
 import Transport.Moto.Moto;
+import enam.DesignCarColor;
 
 public class Main {
 
@@ -29,7 +30,7 @@ public class Main {
         System.out.println("------------------------------------------------------------------------------------------------");
 
         // CLAS DESIGN CAR
-        DesignCar firstCar = new DesignCar("Passanger",2019,"BMW",300,"x3","SUV","Black",3000);
+        DesignCar firstCar = new DesignCar("Passanger",2019,"BMW",300,"x3",2221,"Coupe", DesignCarColor.BLACK);
         firstCar.setBodyType("Coupe");
         firstCar.getBodyType();
         System.out.println("           ");
