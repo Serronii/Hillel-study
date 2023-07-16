@@ -29,4 +29,8 @@ public final class DesignCar extends Car {
     public String toString(){
         return bodyType + " " + color + " " + getType() + " " + getYearOfProduction();
     }
+        public double calculatePriceWithTax(){
+        double taxPerColor = this.color.getTaxPerColor();
+        return getPrice() + taxPerColor;
+    }
 }

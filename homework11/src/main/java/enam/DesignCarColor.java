@@ -3,45 +3,27 @@ package enam;
 public enum DesignCarColor {
 
    // обьекты
-   RED("red"), //public static final DesignCarColor RED = new DesignCarColor; - под капотом
-   WHITE,
-   BLACK,
-   GRAY,
-   BLUE,
-   GREEN,
-   YELLOW,
-
+   RED(1.200),
+   WHITE(1.100),
+   BLACK(400),
+   GRAY(200),
+   BLUE(1.700),
+   GREEN(1.800),
+   YELLOW(2.000),
    ;
-
 
 //    private DesignCarColor(){ - вот такой конструктор создается по дефолту без параметров
    // Каждый метод применим к каждому обьекту выше
 
    //поля
-   private String name;
+   private double TaxPerColor;
 
-   public String getName() {
-      return name;
+   public double getTaxPerColor() {
+      return TaxPerColor;
    }
 
-   //по умолчанию у енама контруктор приватный
-   DesignCarColor(String name) {
-      this.name = name;
-   }
-   //Создаем конструктор пустой для обьектов в которых нету name, иначе будет подчеркивать красным
-   DesignCarColor(){
-
-   }
-
-   @Override
-   public String toString() {
-      return "DesignCarColor{" +
-              "name='" + name + '\'' +
-              '}';
-   }
-
-   public void printEnum(){
-      System.out.println("name " + name);
+   DesignCarColor(double taxPerColor) {
+      TaxPerColor = taxPerColor;
    }
 
 }
