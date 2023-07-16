@@ -31,6 +31,6 @@ public final class DesignCar extends Car {
     }
         public double calculatePriceWithTax(){
         double taxPerColor = this.color.getTaxPerColor();
-        return getPrice() + taxPerColor;
+        return taxPerColor + getPrice();
     }
 }
