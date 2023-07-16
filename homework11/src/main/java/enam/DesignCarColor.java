@@ -8,6 +8,9 @@ public enum DesignCarColor {
    BLACK,
    GRAY,
    BLUE,
+   GREEN,
+   YELLOW,
+
    ;
 
 
