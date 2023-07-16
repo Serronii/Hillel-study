@@ -27,6 +27,6 @@ public final class DesignCar extends Car {
     }
     @Override
     public String toString(){
-        return bodyType + " " + color;
+        return bodyType + " " + color + " " + getType() + " " + getYearOfProduction();
     }
 }
