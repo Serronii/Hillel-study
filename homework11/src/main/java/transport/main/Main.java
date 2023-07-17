@@ -1,9 +1,8 @@
-package Transport.Main;
+package transport.main;
 
-import Transport.Abstraction.Transport;
-import Transport.Car.Car;
-import Transport.Car.DesignCar;
-import Transport.Moto.Moto;
+import transport.car.Car;
+import transport.car.DesignCar;
+import transport.moto.Moto;
 import enam.DesignCarColor;
 
 public class Main {
@@ -24,7 +23,7 @@ public class Main {
         System.out.println("           ");
 
         secondCar.setEnginePower(240);
-        System.out.println("If Engine Power is " + secondCar.getEnginePower() + " = Price Car will be from " + secondCar.calculatePrice() + "$");
+//        System.out.println("If Engine Power is " + secondCar.getEnginePower() + " = Price Car will be from " + secondCar.calculatePrice() + "$");
         System.out.println("           ");
 
         System.out.println("------------------------------------------------------------------------------------------------");
@@ -42,8 +41,8 @@ public class Main {
         System.out.println("              ");
         System.out.println("------------------------------------------------------------------------------------------------");
 
-        // CLASS MOTO
-        Moto firstMoto = new Moto("Motocycle", 2023,0,"choper","Honda",15000);
+         //CLASS MOTO
+        Moto firstMoto = new Moto("Motocycle", 2023,2000,3432,"choper","bmw",20000);
 
         firstMoto.setBodyMoto(null);
         firstMoto.getBodyMoto();
@@ -60,7 +59,7 @@ public class Main {
         System.out.println("           ");
 
         firstMoto.setMileage(4450);
-        System.out.println("Mileage " + firstMoto.getMilleage() + " = Price moto " + firstMoto.calculatePrice() + "$");
+//        System.out.println("Mileage " + firstMoto.getMilleage() + " = Price moto " + firstMoto.calculatePrice() + "$");
         System.out.println("           ");
 
 

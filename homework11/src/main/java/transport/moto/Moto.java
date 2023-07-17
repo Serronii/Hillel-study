@@ -1,6 +1,6 @@
-package Transport.Moto;
+package transport.moto;
 
-import Transport.Abstraction.Transport;
+import transport.abstraction.Transport;
 
 public class Moto extends Transport {
 
@@ -9,8 +9,8 @@ public class Moto extends Transport {
     private String brandMoto;
     private int basicPrice;
 
-    public Moto(String type, int yearOfProduction, int mileage, String bodyMoto, String brandMoto, int basicPrice) {
-        super(type, yearOfProduction);
+    public Moto(String type, int yearOfProduction,int price, int mileage, String bodyMoto, String brandMoto, int basicPrice) {
+        super(type, yearOfProduction, price);
         this.mileage = mileage;
         this.bodyMoto = bodyMoto;
         setBrandMoto(brandMoto);
@@ -49,15 +49,15 @@ public class Moto extends Transport {
         return mileage;
         }
 
-    @Override
-    public int calculatePrice() {
-
-      int priceReduction= (mileage / 1000) * 2000;
-      int price = basicPrice - priceReduction;
-      setPrice(price);
-      return price;
-
-    }
+//    @Override
+//    public int calculatePrice() {
+//
+//      int priceReduction= (mileage / 1000) * 2000;
+//      int price = basicPrice - priceReduction;
+//      setPrice(price);
+//      return price;
+//
+//    }
     @Override
     public String toString(){
         return bodyMoto + " " + brandMoto;

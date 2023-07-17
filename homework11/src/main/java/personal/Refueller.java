@@ -1,6 +1,6 @@
-package Personal;
+package personal;
 
-import Transport.Abstraction.Transport;
+import transport.abstraction.Transport;
 
 public class Refueller {
 

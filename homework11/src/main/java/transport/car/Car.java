@@ -1,6 +1,6 @@
-package Transport.Car;
+package transport.car;
 
-import Transport.Abstraction.Transport;
+import transport.abstraction.Transport;
 
 public class Car extends Transport {
 
@@ -9,7 +9,7 @@ public class Car extends Transport {
     private String model;
 
     public Car(String type, int yearOfProduction, String brand, int enginePower, String model, int price) {
-        super(type, yearOfProduction);
+        super(type, yearOfProduction,price);
         this.enginePower = enginePower;
         this.brand = brand;
         this.model = model;
@@ -37,20 +37,6 @@ public class Car extends Transport {
     public String getModel() {
         System.out.println(this.model);
         return model;
-    }
-    @Override
-    public int calculatePrice() {
-        if (enginePower >= 200) {
-            int price = 10000;
-            setPrice(price);
-            return price;
-
-        } else if (enginePower < 200) {
-            int price = 7000;
-            setPrice(price);
-            return price;
-        }
-        return 0;
     }
     @Override
     public String toString() {

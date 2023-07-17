@@ -1,6 +1,5 @@
-package Transport.Car;
+package transport.car;
 
-import Transport.Car.Car;
 import enam.DesignCarColor;
 
 public final class DesignCar extends Car {
@@ -27,10 +26,10 @@ public final class DesignCar extends Car {
     }
     @Override
     public String toString(){
-        return bodyType + " " + color + " " + getType() + " " + getYearOfProduction();
+        return bodyType + " " + color + " " + getPrice() + " " + getYearOfProduction();
     }
-        public double calculatePriceWithTax(){
-        double taxPerColor = this.color.getTaxPerColor();
+        public int calculatePriceWithTax(){
+        int taxPerColor = this.color.getTaxPerColor();
         return taxPerColor + getPrice();
     }
 }

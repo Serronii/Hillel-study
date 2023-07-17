@@ -1,4 +1,4 @@
-package Transport.Abstraction;
+package transport.abstraction;
 
 public abstract class Transport {
 
@@ -6,7 +6,7 @@ public abstract class Transport {
     private int yearOfProduction;
     private int price;
 
-    public Transport(String type, int yearOfProduction) {
+    public Transport(String type, int yearOfProduction,int price) {
         this.type = type;
         this.yearOfProduction = yearOfProduction;
         this.price = price;
@@ -25,7 +25,6 @@ public abstract class Transport {
     }
 
     public abstract void isFilled();
-   public abstract int calculatePrice();
 
 
 }
