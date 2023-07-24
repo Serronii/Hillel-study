@@ -7,7 +7,7 @@ import java.io.IOException;
 
 public class DraftCredential {
 
-    public static boolean validateLogin(String login, String password, String confirmPassword) {
+    public static boolean validation(String login, String password, String confirmPassword) {
 
         try {
             checkLogin(login);
@@ -26,34 +26,6 @@ public class DraftCredential {
             return false;
         }
     }
-
-    public static boolean validatePassword(String password) {
-        try {
-            checkPassword(password);
-            return true;
-
-        } catch (WrongPasswordException e) {
-            System.out.println("Exception" + e.getMessage());
-            return false;
-        } catch (IOException e) {
-            System.out.println("Exception" + e.getMessage());
-            return false;
-        }
-    }
-
-    public static boolean validateConfirmPassword(String confirmPassword,String password) {
-        try {
-            checkConfirmPassword(confirmPassword,password);
-            return true;
-        } catch (WrongPasswordException e) {
-            System.out.println("Exception" + e.getMessage());
-            return false;
-        } catch (IOException e) {
-            System.out.println("Exception" + e.getMessage());
-            return false;
-        }
-    }
-
 
     public static void checkLogin(String login) throws WrongLoginException {
 

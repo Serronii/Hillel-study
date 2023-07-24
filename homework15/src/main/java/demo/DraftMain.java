@@ -15,7 +15,7 @@ public class DraftMain {
             String password = scanner.nextLine();
             System.out.println("Enter confirm password");
             String confirmPassword = scanner.nextLine();
-            System.out.println(DraftCredential.validateLogin(login,password,confirmPassword));
+            System.out.println(DraftCredential.validation(login,password,confirmPassword));
 
         }
     }
