@@ -5,15 +5,20 @@ import exceptions.WrongPasswordException;
 
 import java.io.IOException;
 
-public class CredentialsValidation {
+public class DraftCredential {
 
-    public static boolean validateLogin(String login) {
+    public static boolean validateLogin(String login, String password, String confirmPassword) {
 
         try {
             checkLogin(login);
+            checkPassword(password);
+            checkConfirmPassword(confirmPassword,password);
             return true;
 
         } catch (WrongLoginException e) {
+            System.out.println("Exception" + e.getMessage());
+            return false;
+        } catch (WrongPasswordException e) {
             System.out.println("Exception" + e.getMessage());
             return false;
         } catch (IOException e) {
