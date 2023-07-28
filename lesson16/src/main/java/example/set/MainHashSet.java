@@ -23,6 +23,7 @@ public class MainHashSet {
 
         System.out.println(people);
         System.out.println("--------------------");
+        System.out.println("--------------------");
 
         for(Person p : people) {
             System.out.println(p);
