@@ -1,5 +1,7 @@
 package productmarket;
 
+import comparators.ProductComparatorByName;
+import comparators.ProductComparatorByPrice;
 import product.Product;
 
 import java.util.ArrayList;
@@ -53,5 +55,17 @@ public class ProductMarket {
             pricesAsString.add(String.valueOf(product.getPrice()));
         }
         return pricesAsString;
+    }
+
+    public List<Product> sortByPrice() {
+        List<Product> products1 = new ArrayList<>(products);
+        Collections.sort(products1, new ProductComparatorByPrice());
+        return products1;
+    }
+
+    public List<Product> sortByName() {
+        List<Product> products1 = new ArrayList<>(products);
+        Collections.sort(products1, new ProductComparatorByName());
+        return products1;
     }
 }

@@ -18,17 +18,11 @@ public class Main {
         products.add(new Product("Water",2));
 
         ProductMarket productMarket = new ProductMarket(products);
+        System.out.println("Comparator Sort Products By Price: ");
+        System.out.println(productMarket.sortByPrice());
+        System.out.println("-----------------------------");
+        System.out.println("Comparator Sort Products By Name: ");
+        System.out.println(productMarket.sortByName());
 
-        System.out.println("--------------------------");
-        System.out.println("All Product Names: " + productMarket.getAllProductNames());
-        System.out.println("--------------------------");
-        System.out.println("Sorted Names: " + productMarket.getProductNamesPerAlphabet());
-        System.out.println("--------------------------");
-        System.out.println("Prices greater than 10: " + productMarket.getAllPricesGreaterThan10());
-        System.out.println("--------------------------");
-        System.out.println("Prices less than 5: " + productMarket.getAllPricesGreaterLessThan5());
-        System.out.println("--------------------------");
-        System.out.println("Prices as String: " + productMarket.getAllPricesAsString());
-        System.out.println("--------------------------");
     }
 }
