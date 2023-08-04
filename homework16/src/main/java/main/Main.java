@@ -6,29 +6,59 @@ import productmarket.ProductMarket;
 import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
 
         List<Product> products = new ArrayList<>();
 
-        products.add(new Product("Wine",11));
-        products.add(new Product("Snickers",4));
-        products.add(new Product("Bred",3.40));
-        products.add(new Product("Water",2));
+        products.add(new Product("Wine", 11));
+        products.add(new Product("Snickers", 4));
+        products.add(new Product("Bred", 3.40));
+        products.add(new Product("Water", 2));
 
-        ProductMarket productMarket = new ProductMarket(products);
+        System.out.println("-------------------------------------------");
+        System.out.println("Все имена продуктов : ");
 
-        System.out.println("--------------------------");
-        System.out.println("All Product Names: " + productMarket.getAllProductNames());
-        System.out.println("--------------------------");
-        System.out.println("Sorted Names: " + productMarket.getProductNamesPerAlphabet());
-        System.out.println("--------------------------");
-        System.out.println("Prices greater than 10: " + productMarket.getAllPricesGreaterThan10());
-        System.out.println("--------------------------");
-        System.out.println("Prices less than 5: " + productMarket.getAllPricesGreaterLessThan5());
-        System.out.println("--------------------------");
-        System.out.println("Prices as String: " + productMarket.getAllPricesAsString());
-        System.out.println("--------------------------");
+        products.stream()
+                .forEach(product -> System.out.println(product.getName()));
+
+        System.out.println("-------------------------------------------");
+        System.out.println("Вернуть все имена по алфавиту");
+
+        products.stream()
+                .map(product -> product.getName())
+                .sorted()
+                .forEach(name -> System.out.println(name));
+
+        System.out.println("-------------------------------------------");
+        System.out.println("Вернуть все цены больше 10 :");
+
+        products.stream()
+                .filter(product -> product.getPrice() > 10)
+                .map(product -> product.getPrice())
+                .forEach(product -> System.out.println(product));
+        // ИЛИ
+        products.stream()
+                .filter(product -> product.getPrice() > 10)
+                .forEach(product -> System.out.println(product.getName() + ": " + product.getPrice()));
+
+        System.out.println("-------------------------------------------");
+        System.out.println("Вернуть все цены меньше 10 :");
+
+        products.stream()
+                .filter(product -> product.getPrice() < 10)
+                .forEach(product -> System.out.println(product.getName() + ": " + product.getPrice()));
+
+        System.out.println("-------------------------------------------");
+        System.out.println("Вернуть цены как стринг :");
+
+        List<String> price = products.stream()
+                .map(product -> String.valueOf(product.getPrice()))
+                .collect(Collectors.toList());
+
+        System.out.println(price);
     }
+
 }
