@@ -18,47 +18,22 @@ public class Main {
         products.add(new Product("Bred", 3.40));
         products.add(new Product("Water", 2));
 
-        System.out.println("-------------------------------------------");
-        System.out.println("Все имена продуктов : ");
-
-        products.stream()
-                .forEach(product -> System.out.println(product.getName()));
+        ProductMarket market = new ProductMarket(products);
 
         System.out.println("-------------------------------------------");
-        System.out.println("Вернуть все имена по алфавиту");
-
-        products.stream()
-                .map(product -> product.getName())
-                .sorted()
-                .forEach(name -> System.out.println(name));
+        System.out.println("Все имена продуктов : " + market.getAllProductNames());
 
         System.out.println("-------------------------------------------");
-        System.out.println("Вернуть все цены больше 10 :");
-
-        products.stream()
-                .filter(product -> product.getPrice() > 10)
-                .map(product -> product.getPrice())
-                .forEach(product -> System.out.println(product));
-        // ИЛИ
-        products.stream()
-                .filter(product -> product.getPrice() > 10)
-                .forEach(product -> System.out.println(product.getName() + ": " + product.getPrice()));
+        System.out.println("Вернуть все имена по алфавиту : " + market.getProductNamesSortedByAlphabetic());
 
         System.out.println("-------------------------------------------");
-        System.out.println("Вернуть все цены меньше 10 :");
-
-        products.stream()
-                .filter(product -> product.getPrice() < 10)
-                .forEach(product -> System.out.println(product.getName() + ": " + product.getPrice()));
+        System.out.println("Вернуть все цены больше 10 :" + market.getPricesBiggerThan10());
 
         System.out.println("-------------------------------------------");
-        System.out.println("Вернуть цены как стринг :");
+        System.out.println("Вернуть все цены меньше 10 :" + market.getPricesLessThan0());
 
-        List<String> price = products.stream()
-                .map(product -> String.valueOf(product.getPrice()))
-                .collect(Collectors.toList());
+        System.out.println("-------------------------------------------");
+        System.out.println("Вернуть цены как стринг : " + market.getPricesAsString());
 
-        System.out.println(price);
     }
-
 }
