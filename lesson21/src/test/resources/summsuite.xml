@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="testing summ for calculator1">
+
+    <test name="test summ positive">
+        <classes>
+            <class name="org.example.CalculatorTestPositive"/>
+        </classes>
+    </test>
+
+    <test name="test summ normal">
+        <classes>
+            <class name="org.example.CalculatorTest"/>
+        </classes>
+    </test>с
+
+
+</suite>

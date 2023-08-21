@@ -8,9 +8,6 @@ import org.testng.annotations.Test;
 public class CalculatorTestPositive {
     private Calculator calculator = new Calculator();
 
-
-
-
     @BeforeClass // как бефор олл в джи юните
     public void init(){
         calculator = new Calculator();
