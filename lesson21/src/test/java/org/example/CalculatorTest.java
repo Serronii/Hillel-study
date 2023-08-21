@@ -34,7 +34,7 @@ public class CalculatorTest {
         System.out.println("test1");
     }
 
-    @Test(groups = {"regression"})
+    @Test(groups = {"smoke"})
     public void summTest1(){
         int a = 10;
         int b = 11;
@@ -42,6 +42,23 @@ public class CalculatorTest {
         Assert.assertEquals(result, 21);
         System.out.println("test2");
     }
+    @Test(groups = {"regression"})
+    public void divTest1(){
+        int a = 10;
+        int b = 2;
+        int result = calculator.div(a, b);
+        Assert.assertEquals(result, 5);
+        System.out.println("test2");
+    }
+    @Test(groups = {"regression"})
+    public void subtractionTest(){
+        int a = 10;
+        int b = 2;
+        int result = calculator.subtraction(a, b);
+        Assert.assertEquals(result, 8);
+        System.out.println("test2");
+    }
+
 
     @AfterClass
     public void afterTestClass(){

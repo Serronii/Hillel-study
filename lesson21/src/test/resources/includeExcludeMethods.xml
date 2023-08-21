@@ -7,7 +7,7 @@
             <class name="org.example.CalculatorTest">
                 <methods>
                     <include name="summTest"/>
-                    <!--                    <exclude name=""></exclude>-->
+                    <exclude name="summTest1"/>
                 </methods>
             </class>
 
