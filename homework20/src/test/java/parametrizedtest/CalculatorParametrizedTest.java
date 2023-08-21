@@ -8,7 +8,7 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
 public class CalculatorParametrizedTest {
-    Calculator calculator = new Calculator();
+    Calculator calculator = new Calculator();//
     @ParameterizedTest
     @CsvSource({"70,7,77"})
     @DisplayName("Test sum a + b")
