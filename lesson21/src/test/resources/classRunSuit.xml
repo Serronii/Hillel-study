@@ -1,5 +1,5 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
-<suite name="testing summ for calculator1">
+<suite name="class run Suite">
 
     <test name="test summ positive">
         <classes>
@@ -11,7 +11,7 @@
         <classes>
             <class name="org.example.CalculatorTest"/>
         </classes>
-    </test>с
+    </test>
 
 
 </suite>
