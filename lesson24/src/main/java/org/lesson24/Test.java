@@ -1,4 +1,4 @@
-package org.example;
+package org.lesson24;
 
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
