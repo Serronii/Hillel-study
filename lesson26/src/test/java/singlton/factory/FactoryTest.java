@@ -15,7 +15,6 @@ public class FactoryTest {
         String browserName = System.getProperty("browserName");
         System.out.println("_________" + browserName + "__________");
         webDriver = WebDriverFactory.getByName(BrowserName.valueOf(browserName));
-
     }
 
     @Test

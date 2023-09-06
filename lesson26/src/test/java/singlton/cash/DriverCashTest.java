@@ -14,17 +14,14 @@ public class DriverCashTest {
     public void initDriver() {
         driver = DriverCash.getDriver();
     }
-
     @Test
     public void testCash() {
         driver.get("https://www.google.com.ua/");
     }
-
     @Test
     public void testCash2() {
         driver.get("https://www.google.com.ua/");
     }
-
     @AfterEach
     public void tearDown() {
         driver.quit();

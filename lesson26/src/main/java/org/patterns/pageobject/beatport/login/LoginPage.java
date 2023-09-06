@@ -8,14 +8,11 @@ import org.patterns.pageobject.beatport.absract.AbstractPage;
 
 public class LoginPage extends AbstractPage {
 
-    private WebDriver driver;
-
     private static final By USERNAME_FIELD = By.xpath("//input[@data-testid='login-input-username']");
-
     private static final By PASSWORD_FIELD = By.xpath("//input[@data-testid='login-input-password']");
-
     private static final By LOGIN_FIELD = By.xpath("//input[@data-testid='login-button-login']");
-
+    private static final By PASSWORD_ERROR = By.xpath("//*[@id='login-form']/div/div[2]/div/div/p");
+    private static final By REGISTER_BUTTON = By.xpath("//*[@id='__next']/div[2]/div[2]/div[2]/div/button");
 
     public LoginPage(WebDriver driver) {
         super(driver);
@@ -31,5 +28,13 @@ public class LoginPage extends AbstractPage {
 
     public WebElement getLOGIN_FIELD() {
         return driver.findElement(LOGIN_FIELD);
+    }
+
+    public WebElement getPASSWORD_ERROR(){
+        return driver.findElement(PASSWORD_ERROR);
+    }
+    public WebElement getREGISTER_BUTTON(){
+        return driver.findElement(REGISTER_BUTTON);
+
     }
 }
