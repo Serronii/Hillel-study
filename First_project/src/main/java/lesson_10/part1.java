@@ -32,7 +32,7 @@ public class part1 {
         stringBuilder1.insert(1,'Y'); //инсерт НЕ заменяет а вставляет дополнительный символ
         stringBuilder1.append(" Вафлисты"); //добавляет
         System.out.println(stringBuilder1);
-
+//-------------------------------------------------------------------------
 
 
 
